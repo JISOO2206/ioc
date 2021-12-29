@@ -10,6 +10,12 @@ public class Main {
         Encoder encoder = new Encoder();
         String result = encoder.encode(url);
 
+        //URL encoding
+        UrlEncoder urlEncoder = new UrlEncoder();
+        String urlResult = urlEncoder.encode(url);
+
 	    System.out.println(result);
+        System.out.println(urlResult);
+
     }
 }
