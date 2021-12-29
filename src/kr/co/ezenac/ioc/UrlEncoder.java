@@ -5,7 +5,8 @@ import java.net.URLEncoder;
 
 public class UrlEncoder implements IEncoder {
 
-    public String encode(String message){
+    @Override
+    public String encode(String message) {
         try {
             return URLEncoder.encode(message, "utf-8");
         } catch (UnsupportedEncodingException e) {
@@ -13,5 +14,4 @@ public class UrlEncoder implements IEncoder {
             return null;
         }
     }
-
 }
