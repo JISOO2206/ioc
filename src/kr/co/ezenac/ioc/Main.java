@@ -6,17 +6,10 @@ public class Main {
 
         String url = "www.google.com/books/it?page=100&name=springframework";
 
-
-        //Base64 encoding
-        IEncoder encoder = new Base64Encoder();
+        Encoder encoder = new Encoder();
         String result = encoder.encode(url);
+        System.out.println(result);
 
-        //URL encoding
-        IEncoder urlEncoder = new UrlEncoder();
-        String urlResult = urlEncoder.encode(url);
-
-	    System.out.println(result);
-        System.out.println(urlResult);
 
     }
 }
